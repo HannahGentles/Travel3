@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wandering Collective</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts for modern styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Abode Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="home.html">
+            <!-- img src="C:\Users\HannahGentles\OneDrive - Strictly Education\Desktop\Website Travel Group\E789269B-40EA-41EE-84C9-152403AE51A5 (1).png" alt="The Wandering Collective"-->
+            <img src="C:\Users\Mamae\Travel3\twc-logo.png" alt="The Wandering Collective">The Wandering Collective
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home.html">About Us<span class="visually-hidden"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinations.html">Destinations</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row flex-container">
+
+            <div class="col-md-6 column-bg-1">
+                <div class="about-us-content">
+                    <h3 class="font-monospace pt-5 pb-5" style="color: white;">
+                        ABOUT US
+                    </h3>
+                </div>
+            </div>
+
+            <div class="col-md-6 column-bg-1"></div>
+
+            <div class="col-md-4 column-bg-2 left-box">
+                <div class="about-us-content">
+                    <p class="font-monospace pt-3 pb-1">
+                        Welcome to The Wandering Collective!
+                    </p>
+
+                    <p class="font-monospace pt-1 pb-3"> 
+                        Discover a world of adventure with us. 
+                        Our travel website is your gateway to exciting holiday blogs and 
+                        travel tips that will inspire your next journey. Dive into our 
+                        Destinations section and start exploring incredible places today!</p>
+                </div>
+            </div>
+
+            <div class="col-md-8 image-container">
+                <div class="row flex-container mx-auto">
+                    <img src="C:\Users\Mamae\Travel3\girl1.png" alt="Girl at the top of a mountain">
+                    <img src="C:\Users\Mamae\Travel3\trees.png" alt="Palm trees">       
+                </div>
+                
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Modal for Image View -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image View</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Modal Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS for Modal Image -->
+    <script>
+        $(document).ready(function() {
+            $('.modal-img').on('click', function() {
+                $('#modalImage').attr('src', $(this).attr('src'));
+                $('#imageModal').modal('show');
+            });
+        });
+    </script>
+
+</body>
+
+<footer class="custom-bg text-center text-lg-start">
+  <div class="container footer-content p-4">
+      <div class="row">
+          <div class="col-12">
+              <p class="text-center mb-0">Made by: Hannah, Ella, Viola, Amaal</p>
+          </div>
+      </div>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    &copy; 2024 The Wandering Collective. All rights reserved
+  </div>
+</footer>
+
+</html>
