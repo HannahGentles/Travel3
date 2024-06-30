@@ -2,12 +2,19 @@
 
 /* Set the background color to Beige */
 body {
-    background-color: #F2EEEB; /* Beige */
+    /* background-color: #F2EEEB; /* Beige */
+    font-family: 'Segoe UI', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure body takes full height of viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Modern capitalized elegant style for the title */
 h1 {
-    font-family: 'Futura', Modern;
+    
     text-transform: uppercase;
     font-size: 4rem; /* Increased size */
     text-align: center;
@@ -16,27 +23,32 @@ h1 {
 
 /* Modern style for the subtitles */
 h2 {
-    font-family: 'Futura';
+    
     text-align: left; /* Move to the left */
     text-decoration: underline; /* Underline the text */
     font-size: 2rem;
     margin-top: 2rem;
 }
 
+h3 {
+    margin-top: 2rem;
+}
+
+.container {
+    flex: 1; /* Makes sure container takes available space */
+    padding: 1rem;
+}
+
 /* Navbar custom styles */
 .navbar {
-    background-color: #E1E8CC; /* Sage Green background for navbar */
-    border-bottom: 15px solid #ecd7d7; /* Light border for separation */
-}
+    background-color: #F2EEEB;
+    color: 123320;
+   }
 
 .navbar-brand img {
     height: 80px;
 }
 
-/* General content styling */
-.container {
-    padding: 2rem 0;
-}
 
 .row img {
     margin-bottom: 1rem;
@@ -48,4 +60,83 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 500; /* Example weight, adjust as needed */
     font-style: normal;
+}
+
+/* Flexbox container for overlapping columns */
+.flex-container {
+    display: flex;
+    margin-bottom: 2rem;
+    position: relative; /* Ensure that the absolute positioning inside works correctly */
+}
+
+.column-bg-1 {
+    background-color: #CEEAD0;
+    padding: 2rem 0; /* Add padding for spacing */
+    z-index: 1; /* Ensures these columns are below the overlapping column */
+    
+}
+
+.column-bg-2 {
+    background-color: #F2EEEB;
+    padding: 2rem 0;
+    z-index: 2; /* Ensure it overlaps other columns */
+}
+
+.left-box {
+    position: absolute; /* Allows overlapping */
+    top: 80%; /* Positioned a bit below "ABOUT US" */
+    left: 8%; /* Positioned to the centre of the left column */
+    width: 100%; 
+}
+.about-us-content {
+    align-self: center; /* Center vertically */
+    text-align: center; /* Center text inside */
+}
+
+footer {
+    background-color: #F2EEEB;
+    text-align: center;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.continents {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+.continent {
+    
+    margin: 0 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #F2EEEB; /* Optional: Background color for readability */
+    padding: 1rem 0; /* Padding to ensure the text is not too close to the edges */
+    flex: 1;
+
+}
+
+.image-container {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateX(18%);
+    z-index: 2;
+}
+
+.image-container img {
+    width: 40%;
+    height: auto;
+}
+
+.lower-contained {
+    top: 120%;
 }
