@@ -1,0 +1,326 @@
+html, body {
+    display: flex;
+    justify-content: left;
+    width: 1920px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+body {
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* This allows the main content to grow and take available space */
+}
+
+/* HEADER */ 
+.header {
+    display: flex;
+    padding: 50px;
+    position: absolute;
+    top: 40px;
+}
+
+.line {
+    display: flex;
+    position: absolute;
+}
+    
+.twcLogo { 
+    width: 200%;
+    height: auto;
+    position: absolute;
+    left: 100px; 
+    bottom: -70px;
+    
+}
+
+.about, .map, .destinations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #123320;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 100;
+    font-size: x-large;
+    width: 120px;
+    height: auto;
+    background-color: white;
+    width: 160px;
+}
+
+.about { 
+    left: 1200px;
+}
+
+.map{
+    left: 1400px;
+}
+
+.destinations{
+    left: 1600px;
+}
+
+.aboutText, .mapText, .destText{
+    position: relative;
+    bottom: 20px;
+
+}
+/* END OF HEADER */
+
+
+
+/* ABOUT US */
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    align-self: center; /* Center vertically */
+    text-align: center; /* Center text inside */
+}
+
+.box1-1{
+    background-color: #E1E8CC;
+    padding: 200px;
+    height: 10px;
+    width: 1390px;
+    position: absolute;
+    top: 275px;
+    left: 60px;
+    flex: 1;
+
+}
+
+.about-us h2 {
+    left: 300px;
+}
+
+.box1-2 {
+    background-color: #F2EEEB;
+    padding: 2rem 0;
+    z-index: 2; /* Ensure it overlaps other columns */
+    position: absolute; /* Allows overlapping */
+    top: 600px; /* Positioned a bit below "ABOUT US" */
+    left: 15%; /* Positioned to the centre of the left column */
+    width: 550px; 
+}
+
+.about-us-content {
+    font-size: 20px;
+}
+
+.box1-3 {
+    display: flex;
+    margin-bottom: 2rem;
+    position: absolute; /* Ensure that the absolute positioning inside works correctly */
+    top: 350px;
+    right: 0%;
+    transform: translateX(-20%);
+    z-index: 2;
+    width: 40%;
+    height: auto;
+}
+
+.box1-3 img {
+    width: 55%; /* Makes the images take the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Optional: ensures the image covers the container without distortion */
+}
+
+
+/* END OF ABOUT US */
+
+/* CONTINENTS */
+.continents{
+    position: absolute;
+    top: 1000px;
+   
+}
+
+h2 {
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    padding: 50px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: lighter;
+    font-size: xxx-large;
+    letter-spacing: 8px;
+}
+
+.box1{
+    background-color: #E1E8CC;
+    padding: 200px;
+    height: 10px;
+    width: 1390px;
+    position: absolute;
+    top: 900px;
+    left: 60px;
+}
+
+.box2{
+    position: absolute;
+    top: 200px;
+    right: 145px;
+}
+
+.continentsImgs{
+    position: absolute; 
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.asiaLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 800px;
+    left: 265px;
+    letter-spacing: 20px;
+    width: 400px;
+    height: 60px;
+
+}
+
+.africaLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 800px;
+    left: 670px;
+    width: 440px;
+    height: 60px;
+    background-color: #F2EEEB;
+}
+
+
+.americaLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 800px;
+    left: 1120px;
+    width: 400px;
+    height: 60px;
+    
+}
+
+.europeLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 800px;
+    left: 1530px;
+    width: 400px;
+    height: 60px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    color: #123320;
+    letter-spacing: 20px;
+    width: 400px;
+    height: 60px;
+    background-color: #F2EEEB;
+}
+
+.asiaImg{
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: -188px;
+    bottom: 50px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    clip-path: inset(0px 454px 0px 454px);
+}
+
+.africaImg{
+    position: absolute;
+    top: 100px;
+    left: 325px;
+    bottom: 50px;
+    clip-path: inset(0px 341px 0px 348px);
+}
+
+.americaImg{
+    position: absolute;
+    top: 100px;
+    left: 1070px;
+    bottom: 50px;
+    clip-path: inset(0px 51px 0px 50px);
+}
+
+.europeImg{
+    position: absolute;
+    top: 100px;
+    left: 1170px;
+    bottom: 50px;
+    clip-path: inset(0px 363px 0px 360px);
+}
+
+
+a:link{
+    color: #123320;
+    text-decoration: none;
+}
+ a:visited{
+    color: #123320;
+    text-decoration: none;
+}
+ 
+.aboutText:hover, .mapText:hover, .destText:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #123320;
+    color: white;
+}
+ 
+.asiaLink:hover, .americaLink:hover, .africaLink:hover,.europeLink:hover, .text:hover{
+    background-color: #123320;
+    color: white;
+
+}
+
+.asiaImg:hover, .americaImg:hover, .africaImg:hover,.europeImg:hover{
+    opacity: 0.8;
+    background-color: #123320;
+}
+
+ a:active{
+    color: #123320;
+    text-decoration: underline;
+}
+
+/* END OF CONTINENTS */
+
+/* COUNTRIES */
+.box3-1 {
+    position: absolute;
+    top: 220px;
+    justify-content: center;
+    width: 80%;
+}
+/* END OF COUNTRIES */

@@ -1,0 +1,137 @@
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use Flexbox on the body */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: left; /* Center vertically */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%; /* Ensure body width is 100% of the viewport */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+h2 {
+    display: flex;
+    position: relative;
+    top: -10px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: lighter;
+    font-size: xxx-large;
+    letter-spacing: 8px;
+}
+
+
+h3 {
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: lighter;
+    font-size: xx-large;
+    letter-spacing: 8px;
+}
+
+/* HEADER */ 
+.header {
+    display: flex;
+    padding: 50px;
+    position: absolute;
+    top: 40px;
+}
+
+.line {
+    display: flex;
+    position: absolute;
+}
+    
+.twcLogo { 
+    width: 200%;
+    height: auto;
+    position: absolute;
+    left: 100px; 
+    bottom: -70px;
+    
+}
+
+.about, .map, .destinations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #123320;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 100;
+    font-size: x-large;
+    width: 120px;
+    height: auto;
+    background-color: white;
+    width: 160px;
+}
+
+.about { 
+    left: 1200px;
+}
+
+.map{
+    left: 1400px;
+}
+
+.destinations{
+    left: 1600px;
+}
+
+.aboutText, .mapText, .destText{
+    position: relative;
+    bottom: 20px;
+
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    color: #123320;
+    letter-spacing: 20px;
+    width: 400px;
+    height: 60px;
+    background-color: #F2EEEB;
+}
+
+a:link{
+    color: #123320;
+    text-decoration: none;
+}
+ a:visited{
+    color: #123320;
+    text-decoration: none;
+}
+ 
+.aboutText:hover, .mapText:hover, .destText:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #123320;
+    color: white;
+}
+/* END OF HEADER */
+
+
+/* COUNTRIES */
+.box3-1 {
+    position: absolute; /* Or relative if it doesn't need to overlap other content */
+    top: 110%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Optional: Set a max-width */
+    padding: 20px; /* Optional: Add padding for spacing */
+}
+
+
+/* END OF COUNTRIES */
