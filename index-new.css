@@ -377,6 +377,10 @@ a:link{
 
 .socials{
     position: relative;
+    width: 20%;
+    height: auto;
+    right: 690px;
+    top: 300px;
 
 }
 .vLine2{
@@ -390,7 +394,7 @@ a:link{
 .nl{
     position: relative;
     left: 1330px;
-    top: 80px;
+    top: 30px;
 }
 
 .nlText{
@@ -403,9 +407,8 @@ a:link{
 form {
     position: relative;
     left: 1360px;
-    top: 116px;
+    top: 60px;
     width: 480px;
-    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
