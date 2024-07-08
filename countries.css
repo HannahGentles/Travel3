@@ -13,6 +13,10 @@ body {
     overflow-x: hidden; /* Hide horizontal overflow */
 }
 
+.main-content {
+    flex: 1; /* Allow content to grow and fill available space */
+}
+
 h2 {
     display: flex;
     position: relative;
@@ -23,7 +27,6 @@ h2 {
     letter-spacing: 8px;
 }
 
-
 h3 {
     display: flex;
     font-family: 'Segoe UI', sans-serif;
@@ -32,7 +35,7 @@ h3 {
     letter-spacing: 8px;
 }
 
-/* HEADER */ 
+/* HEADER */
 .header {
     display: flex;
     padding: 50px;
@@ -51,7 +54,6 @@ h3 {
     position: absolute;
     left: 100px; 
     bottom: -70px;
-    
 }
 
 .about, .map, .destinations {
@@ -73,21 +75,20 @@ h3 {
     left: 1200px;
 }
 
-.map{
+.map {
     left: 1400px;
 }
 
-.destinations{
+.destinations {
     left: 1600px;
 }
 
-.aboutText, .mapText, .destText{
+.aboutText, .mapText, .destText {
     position: relative;
     bottom: 20px;
-
 }
 
-.text{
+.text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,16 +103,17 @@ h3 {
     background-color: #F2EEEB;
 }
 
-a:link{
+a:link {
     color: #123320;
     text-decoration: none;
 }
- a:visited{
+
+a:visited {
     color: #123320;
     text-decoration: none;
 }
- 
-.aboutText:hover, .mapText:hover, .destText:hover{
+
+.aboutText:hover, .mapText:hover, .destText:hover {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +122,6 @@ a:link{
     color: white;
 }
 /* END OF HEADER */
-
 
 /* COUNTRIES */
 .box3-1 {
@@ -133,5 +134,84 @@ a:link{
     padding: 20px; /* Optional: Add padding for spacing */
 }
 
+.fixed-size-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover; /* Ensures the image covers the entire element without stretching */
+    position: relative;
+    transition: 0.5s ease; /* Smooth transition */
+}
+
+.fixed-size-image:hover {
+    filter: brightness(50%); /* Apply a white cast effect */
+}
+
+.fixed-size-image-wrapper, .coming-soon-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+}
+
+.fixed-size-image-wrapper::after {
+    content: "Click here to read blog";
+    color: #F2EEEB;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 1.2em;
+    pointer-events: none;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.coming-soon-wrapper::after {
+    content: "Blogs coming soon!!!";
+    color: #F2EEEB;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 1.2em;
+    pointer-events: none;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.fixed-size-image-wrapper:hover::after, .coming-soon-wrapper:hover::after {
+    opacity: 1;
+}
 
 /* END OF COUNTRIES */
+ 
+
+    footer {
+        background-color: #E1E8CC; /* Light background color */
+        color: #343a40; /* Dark text color for contrast */
+        padding: 20px 0; /* Add some padding */
+        position: relative; /* Ensure it is positioned normally */
+        width: 100%; /* Make sure it takes up full width */
+        bottom: -2000px; /* Ensure it stays at the bottom if needed */
+        text-align: center; /* Center align text */
+    }
+
+    .footer-content {
+        margin: 0 auto; /* Center the content */
+    }
+
+    .footer-content p {
+        margin: 0; /* Remove default margin */
+    }
+
+    .text-center {
+        background-color: rgba(0, 0, 0, 0.05); /* Light background for bottom part */
+        padding: 10px 0; /* Padding for bottom part */
+    }
+
