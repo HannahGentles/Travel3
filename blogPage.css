@@ -2,7 +2,8 @@ body {
     display: flex;
     justify-content: left;
     width: 1920px;
-    /*overflow-x: hidden;*/
+    height: 100%;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -137,10 +138,10 @@ a:link{
 }
 
 .articleContent{
+    position: relative;
     justify-content: center;
     padding:300px;
- 
-    bottom: 50px;
+    top: 90px;
 }
 
 .articleTitle{
@@ -189,4 +190,135 @@ a:link{
     padding-top: 50px;
     position: relative;
     top: 380px;
+}
+
+.footer {
+    position: relative;
+    background-color: #123320;
+    text-align: center;
+    height: 400px;
+    margin-top: auto;
+}
+
+.logoWhite{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    left: 100px;
+}
+
+.footerName{
+    color: white;
+    width: 30%;
+    font-size: 20px;
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    
+}
+
+.vLine1{
+    position: absolute;
+    border-right: 1px solid #F2EEEB;
+    height: 150px;
+    top: 134px;
+    right: 1300px;
+    
+}
+
+.contact{
+    position: relative;
+    width: auto;
+    left: 680px;
+    bottom: 100px;
+
+}
+
+.contactText{
+    color: white;
+    width: 40%;
+    font-size: 20px;
+
+}
+
+.socials{
+    position: relative;
+    width: 20%;
+    height: auto;
+    right: 690px;
+    top: 300px;
+
+}
+.vLine2{
+    position: absolute;
+    border-right: 1px solid #F2EEEB;
+    height: 150px;
+    top:234px;
+    right: 1340px;
+}
+
+.nl{
+    position: relative;
+    left: 1330px;
+    top: 30px;
+}
+
+.nlText{
+    color: white;
+    width: 40%;
+    font-size: 20px;
+}
+
+
+form {
+    position: relative;
+    left: 1360px;
+    top: 60px;
+    width: 480px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .newsletter {
+    padding: 20px;
+    background-color: #E1E8CC;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: px 0;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    background-color: #E1E8CC;
+    color: #123320;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+  .box12{
+    position: relative;
+    z-index: -1;
+    background-color: #123320;
+    width: 1800px;
+    height: 100px;
+    bottom: 980px;
+    left: 50px;
+    
+}
+
+.box13{
+    position: relative;
+    z-index: -1;
+    background-color:#F2EEEb ;
+    width: 1800px;
+    height: 600px;
+    bottom: 980px;
+    left: 50px;
+    
 }

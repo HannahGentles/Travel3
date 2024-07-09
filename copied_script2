@@ -1,0 +1,330 @@
+html,body {
+    display: flex;
+    justify-content: left;
+    width: 1920px;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    flex: 1; /* This allows the main content to grow and take available space */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    display: flex;
+    padding: 50px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+
+}
+
+.line{
+    display: flex;
+    position: absolute
+}
+    
+.twcLogo { 
+    width: 200%;
+    height: auto;
+    position: absolute;
+    left: 100px; 
+    bottom: -70px;
+    
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1200px;
+    color: #123320;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 100;
+    font-size: x-large;
+    width: 120px;
+    height: auto;
+    background-color: white;
+
+}
+
+.aboutText{
+    position: relative;
+    bottom: 20px;
+
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1400px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 100;
+    font-size: x-large;
+    width: 120px;
+    height: auto;
+    background-color: white;
+
+}
+
+.mapText{
+    position: relative;
+    bottom: 20px;
+
+}
+
+.destinations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1600px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 100;
+    font-size: x-large;
+    width: 200px;
+    height: auto;
+    background-color: white;
+
+}
+
+.destText{
+    position: relative;
+    bottom: 20px;
+
+}
+
+a:link{
+    color: #123320;
+    text-decoration: none;
+}
+ a:visited{
+    color: #123320;
+    text-decoration: none;
+}
+
+ .aboutText:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #123320;
+    color: white;
+}
+ 
+ .mapText:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #123320;
+    color: white;
+}
+ 
+ .destText:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #123320;
+    color: white;
+}
+ 
+
+ a:active{
+    color: #123320;
+    text-decoration: underline;
+}
+
+
+.articleContent{
+    position: relative;
+    justify-content: center;
+    padding:300px;
+    top: 100px;
+}
+
+.articleTitle{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: lighter;
+    font-size: xxx-large;
+    letter-spacing: 8px;
+}
+
+.articleText{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 300;
+    font-size: larger;
+    padding-top: 50px;
+}
+
+.articleImages{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: absolute;
+    right: 100px;
+    top: 650px ;
+   
+    
+}
+
+.imageCenter{
+    padding: 100px;
+    position: relative;
+    left: 520px;
+    bottom: 432px;
+}
+
+.imageRight{
+    padding: 100px;
+    position: relative;
+    left: 1030px;
+    bottom: 964px;
+}
+
+.textCont{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 300;
+    font-size: larger;
+    padding-top: 50px;
+    position: relative;
+    top: 380px;
+}
+
+.footer {
+    position: relative;
+    background-color: #123320;
+    text-align: center;
+    height: 400px;
+    margin-top: 600px;
+}
+
+.logoWhite{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    left: 100px;
+}
+
+.footerName{
+    color: white;
+    width: 30%;
+    font-size: 20px;
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    
+}
+
+.vLine1{
+    position: absolute;
+    border-right: 1px solid #F2EEEB;
+    height: 150px;
+    top: 134px;
+    right: 1300px;
+    
+}
+
+.contact{
+    position: relative;
+    width: auto;
+    left: 680px;
+    bottom: 100px;
+
+}
+
+.contactText{
+    color: white;
+    width: 40%;
+    font-size: 20px;
+
+}
+
+.socials{
+    position: relative;
+    width: 20%;
+    height: auto;
+    right: 690px;
+    top: 300px;
+
+}
+.vLine2{
+    position: absolute;
+    border-right: 1px solid #F2EEEB;
+    height: 150px;
+    top:234px;
+    right: 1340px;
+}
+
+.nl{
+    position: relative;
+    left: 1330px;
+    top: 30px;
+}
+
+.nlText{
+    color: white;
+    width: 40%;
+    font-size: 20px;
+}
+
+
+form {
+    position: relative;
+    left: 1360px;
+    top: 60px;
+    width: 480px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .newsletter {
+    padding: 20px;
+    background-color: #E1E8CC;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: px 0;
+    
+  }
+  
+  input[type=submit] {
+    background-color: #E1E8CC;
+    color: #123320;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+  .box12{
+    position: relative;
+    z-index: -1;
+    background-color: #123320;
+    width: 1800px;
+    height: 100px;
+    bottom: 980px;
+    left: 50px;
+    
+}
+
+.box13{
+    position: relative;
+    z-index: -1;
+    background-color:#F2EEEb ;
+    width: 1800px;
+    height: 600px;
+    bottom: 980px;
+    left: 50px;
+    
+}
