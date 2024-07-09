@@ -1,5 +1,5 @@
 html, body {
-    height: 100%; /* Ensure full height */
+    height: 200%; /* Ensure full height */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     display: flex; /* Use Flexbox on the body */
@@ -191,27 +191,123 @@ a:visited {
 
 /* END OF COUNTRIES */
  
+.footer {
+    position: relative;
+    background-color: #123320;
+    text-align: center;
+    height: 400px;
+    top: 2100px;
+}
 
-    footer {
-        background-color: #E1E8CC; /* Light background color */
-        color: #343a40; /* Dark text color for contrast */
-        padding: 20px 0; /* Add some padding */
-        position: relative; /* Ensure it is positioned normally */
-        width: 100%; /* Make sure it takes up full width */
-        bottom: -2000px; /* Ensure it stays at the bottom if needed */
-        text-align: center; /* Center align text */
-    }
+.logoWhite{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    left: 100px;
+}
 
-    .footer-content {
-        margin: 0 auto; /* Center the content */
-    }
+.footerName{
+    color: white;
+    width: 30%;
+    font-size: 20px;
+    position: absolute;
+    top: 260px;
+    left: 60px;
+    
+}
 
-    .footer-content p {
-        margin: 0; /* Remove default margin */
-    }
+.vLine1{
+    position: absolute;
+    border-right: 1px solid #F2EEEB;
+    height: 150px;
+    top: 134px;
+    right: 1300px;
+    
+}
 
-    .text-center {
-        background-color: rgba(0, 0, 0, 0.05); /* Light background for bottom part */
-        padding: 10px 0; /* Padding for bottom part */
-    }
+.contact{
+    position: relative;
+    width: auto;
+    left: 680px;
+    bottom: 100px;
 
+}
+
+.contactText{
+    position: relative;
+    top: 200px;
+    left: 100px;
+    color: white;
+    width: 40%;
+    font-size: 20px;
+
+}
+
+.socials{
+    position: relative;
+    width: 20%;
+    height: auto;
+    right: 690px;
+    top: 300px;
+
+}
+.vLine2{
+    position: absolute;
+    border-right: 1px solid #F2EEEB;
+    height: 150px;
+    top:234px;
+    right: 1340px;
+}
+
+.nl{
+    position: relative;
+    left: 1330px;
+    top: 30px;
+}
+
+.nlText{
+    position: relative;
+    color: white;
+    top: 170px;
+    left: 130px;
+    width: 40%;
+    font-size: 20px;
+}
+
+
+form {
+    position: relative;
+    left: 1360px;
+    bottom: 40px;
+    width: 480px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .newsletter {
+    padding: 20px;
+    background-color: #E1E8CC;
+    width: 480px;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 90%;
+    padding: 12px;
+    margin: px 0;
+    
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    position: relative;
+    right: 15px;
+    background-color: #E1E8CC;
+    color: #123320;
+    padding: 20px;
+    width: 480px;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
